@@ -2,12 +2,16 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 form{
+    /* Gjorde form-objektet till inline-block för att inte vara över hela skärmen*/
+    display: inline-block; 
     background-color: rgb(122, 155, 247);
     padding: 1rem;
     padding-left: 1.2rem;
     border: 2px solid black;
     border-radius: 10px;
+    /* Lekte runt med border shadow för att få lite 3D effekt */
     box-shadow: 5px 5px 2px gray, inset 5px 5px 10px rgb(187, 205, 255) ;
 }
 
@@ -16,16 +20,20 @@ p{
     margin-top: 0;
 }
 
+/* Klass enbart för h1 inne i thanks.html då jag inte ville göra flera css-filer*/
 .thanks{
     margin-top: 0;
 }
 
+/* Använde mig av typattribut fast "for" för att specifiera in mig på vissa element
+   Detta gjorde det möjligt för mig att inte störa radioknapparna */
 label[for="namn"], label[for="age"]{
     width: 100px;
     display: inline-block;
-    margin-top: auto;
+    margin-top: 5px;
 }
 
+/* Här ändrar jag submit knappen för att få den lite finare och i 3D... typ...*/
 input[type="submit"]{
     background-color: rgb(212, 212, 212);
     font-size: 1rem;
@@ -34,9 +42,12 @@ input[type="submit"]{
     box-shadow: 2px 2px 2px rgb(53, 53, 53), inset 2px 2px 5px rgb(255, 255, 255) ;
     border: 1px solid black;
     border-radius: 10px;
+    /* transition används för att få en smidig övergång för transform för hover och focus*/
     transition: 0.3s ease;
 }
 
+/* Vi ändrar lite färger och gör knappen något större när vi hovrar över knappen
+   samt när vi har tabbat fram till den */
 input[type="submit"]:hover, input[type="submit"]:focus-visible{
     transform:scale(105%);
     color:white;
@@ -62,6 +73,8 @@ input[type="submit"]:hover, input[type="submit"]:focus-visible{
     box-shadow: 5px 5px 2px gray, inset 5px 5px 10px rgb(255, 113, 113) ;
 }
 
+/* Byggde som kommenterat i html-dokumentet knappen med <a> i stället för <button> 
+   Detta för att slippa onclick handlers */
 .backbutton{
     color:white;
     background-color: rgb(12, 95, 1);
@@ -76,7 +89,9 @@ input[type="submit"]:hover, input[type="submit"]:focus-visible{
     transition: 0.3s ease;
 }
 
-.backbutton:hover{
+/* Vi ändrar lite färger och gör knappen något större när vi hovrar över knappen
+   samt när vi har tabbat fram till den */
+.backbutton:hover, .backbutton:focus-visible{
     display: inline-block;
     transform:scale(105%);
     color:white;

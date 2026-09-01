@@ -11,16 +11,21 @@
         <h1>Formulär Övning</h1>
     </header>
     
-    <form action="thanks.html" method="get">
+    <!-- Formuläret länkar till en tacksida. Vi kör get som metod då det inte är nån känslig info som sparas-->
+    <form action="thanks.html" method="get"> 
         <p>
+            <!-- Formulär för text-input -->
             <strong>Var god ange namn och ålder:</strong> <br>
-            <label for="namn">Namn:</label>
-            <input type="text" id="namn" name="namn"><br><br>
+            <!-- Vi använder for="" för att koppla till input-->
+            <label for="namn">Namn:</label> 
+            <!-- Inputtyp är text, vi kopplar id och for, name för att spara info -->
+            <input type="text" id="namn" name="namn"><br> 
 
             <label for="age">Ålder:</label>
-            <input type="text" id="age" name="age"><br><br>
+            <input type="text" id="age" name="age"><br>
         </p>
         <p>
+            <!-- Inputtyp är checkbox, kopplar id till for, namn för att spara info, value för att särskilja sparad info i intressen-->
             <strong>Har du något av nedastående intressen?</strong> <br>
             <input type="checkbox" id="gaming" name="intressen" value="gaming">
             <label for="gaming">Gaming</label> <br>
@@ -36,6 +41,7 @@
         </p>
 
         <p>
+            <!-- Inputtyp är radioknappar, kopplar id till for, namn för att spara info, value för att särskilja sparad info i math-->
             <strong>Vad är 1+1?</strong> <br>
 
             <input type="radio" id="math_one" name="math" value="math_one">
@@ -50,6 +56,8 @@
             <input type="radio" id="math_four" name="math" value="math_four">
             <label for="math_four">11</label>
         </p>
+        <!-- Inputtyp är en submit-knapp för att skicka datan till <form action=""> 
+             Value är texten på knappen i detta fall -->
         <input type="submit" value="Skicka svar">
     </form>
 </body>
