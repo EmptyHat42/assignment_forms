@@ -1,0 +1,92 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    background-color: rgb(122, 155, 247);
+    padding: 1rem;
+    padding-left: 1.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px gray, inset 5px 5px 10px rgb(187, 205, 255) ;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.thanks{
+    margin-top: 0;
+}
+
+label[for="namn"], label[for="age"]{
+    width: 100px;
+    display: inline-block;
+    margin-top: auto;
+}
+
+input[type="submit"]{
+    background-color: rgb(212, 212, 212);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53), inset 2px 2px 5px rgb(255, 255, 255) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus-visible{
+    transform:scale(105%);
+    color:white;
+    background-color: rgb(102, 102, 102);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53), inset 2px 2px 5px rgb(211, 211, 211) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.warning{
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    background-color: rgb(151, 0, 0);
+    padding: 1rem;
+    padding-left: 1.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px gray, inset 5px 5px 10px rgb(255, 113, 113) ;
+}
+
+.backbutton{
+    color:white;
+    background-color: rgb(12, 95, 1);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53), inset 2px 2px 5px rgb(192, 221, 189) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.backbutton:hover{
+    display: inline-block;
+    transform:scale(105%);
+    color:white;
+    background-color: rgb(6, 51, 0);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53), inset 2px 2px 5px rgb(85, 99, 83) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

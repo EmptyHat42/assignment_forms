@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär Övning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulär Övning</h1>
+    </header>
+    
+    <form action="thanks.html" method="get">
+        <p>
+            <strong>Var god ange namn och ålder:</strong> <br>
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn"><br><br>
+
+            <label for="age">Ålder:</label>
+            <input type="text" id="age" name="age"><br><br>
+        </p>
+        <p>
+            <strong>Har du något av nedastående intressen?</strong> <br>
+            <input type="checkbox" id="gaming" name="intressen" value="gaming">
+            <label for="gaming">Gaming</label> <br>
+
+            <input type="checkbox" id="music" name="intressen" value="music">
+            <label for="music">Musik</label> <br>
+
+            <input type="checkbox" id="outside" name="intressen" value="outside">
+            <label for="outside">Friluftsliv</label> <br>
+
+            <input type="checkbox" id="sports" name="intressen" value="sports">
+            <label for="sports">Sport</label>
+        </p>
+
+        <p>
+            <strong>Vad är 1+1?</strong> <br>
+
+            <input type="radio" id="math_one" name="math" value="math_one">
+            <label for="math_one">42</label> <br>
+
+            <input type="radio" id="math_two" name="math" value="math_two">
+            <label for="math_two">x = (-b ± sqrt(b² - 4ac)) / (2a)</label> <br>
+
+            <input type="radio" id="math_three" name="math" value="math_three">
+            <label for="math_three">2</label> <br>
+
+            <input type="radio" id="math_four" name="math" value="math_four">
+            <label for="math_four">11</label>
+        </p>
+        <input type="submit" value="Skicka svar">
+    </form>
+</body>
+</html>
